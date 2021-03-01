@@ -5,6 +5,10 @@ const app = express();
 
 const PORT = 3000;
 
+//Handle Data Parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 //Data 
 //====================================
@@ -31,8 +35,6 @@ const characters = [
         forcePoints: 1350
     }
 ]
-
-
 
 //Routes
 //===============================================
@@ -65,6 +67,21 @@ app.get('/api/characters/:character', (req, res) => {
 
 })
 
+//Post request
+//We are posting to the api/characters route
+
+app.post("/api/characters", (req, res) => {
+   
+    //Grabbing the posted data body
+    let newCharacter = req.body;
+    console.log(newCharacter)
+
+    //Add to the characters array
+    characters.push(newCharacter);
+
+    //res
+    res.json(newCharacter);
+})
 
 //Listening
 app.listen(PORT, () => {
