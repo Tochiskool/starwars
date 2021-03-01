@@ -1,0 +1,25 @@
+{
+  "name": "08-starwars-1",
+  "version": "1.0.0",
+  "description": "Star wars project",
+  "main": "server1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tochiskool/starwars.git"
+  },
+  "keywords": [
+    "Express"
+  ],
+  "author": "Tochiskool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tochiskool/starwars/issues"
+  },
+  "homepage": "https://github.com/Tochiskool/starwars#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
