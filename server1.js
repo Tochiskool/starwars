@@ -10,22 +10,25 @@ const PORT = 3000;
 //====================================
 const characters = [
     {
+        routeName: "yoda",
         name: "Yoda",
         role: "Jedi Master",
         age: 900,
         forcePoints: 2000
     },
-   {
+    {
+        routeName: "darthmaul",
         name: "Darth Maul",
         role: "Sith Lord",
         age: 200,
         forcePoints: 2000
     },
     {
+        routeName: "obiwankenobi",
         name: "Obi Wan Kenobi",
         role: "Sith Lord",
-        age: 200,
-        forcePoints: 2000
+        age: 55,
+        forcePoints: 1350
     }
 ]
 
@@ -48,7 +51,7 @@ app.get('/api/characters/:character', (req, res) => {
     console.log(`${chosenCharacter}`);
 
     for (let i = 0; i < characters.length; i++){
-        if (chosenCharacter === characters[i].name) {
+        if (chosenCharacter === characters[i].routeName) {
             return res.json(characters[i]);
         }
     }
