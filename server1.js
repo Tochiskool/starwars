@@ -78,18 +78,22 @@ app.get('/api/characters/:character', (req, res) => {
 
 app.post("/api/characters", (req, res) => {
    
-    //Grabbing the posted data body
+    //req.body hosts is equal to the JSON post sent from the user
+    //This works because of our body parsing middleware
     let newCharacter = req.body;
+
+    //Using a RegEx pattern to remove spaces from ndwCharacter
+    //You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+    newCharacter.routeName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
     console.log(newCharacter)
 
-    //Add to the characters array
     characters.push(newCharacter);
 
     //res
     res.json(newCharacter);
 })
 
-//Listening
+//Starts the server to begin listening
 app.listen(PORT, () => {
     console.log(`Listening on http://localhost:${PORT}`)
 })
