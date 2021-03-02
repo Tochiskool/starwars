@@ -2,6 +2,7 @@
 //===================================
 const express = require('express');
 const app = express();
+const path = require('path');
 
 const PORT = 3000;
 
@@ -39,8 +40,9 @@ const characters = [
 //Routes
 //===============================================
 app.get('/', (req, res) => {
-    console.log(req.url)
-    res.send(`Welcome to the star wars Page!!`);
+    //console.log(req.url)
+    //res.send(`Welcome to the star wars Page!!`);
+    res.sendFile(path.join(__dirname, "view.html"));
 })
 
 //Display all characters
