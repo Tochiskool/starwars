@@ -65,7 +65,7 @@ app.get('/api/characters/:character', (req, res) => {
     }
 
     //If no match Displays character not found
-   return  res.send(`Character Not Found!!`)
+   return  res.json(false)
 
 })
 
