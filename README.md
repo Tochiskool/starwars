@@ -15,7 +15,11 @@
 - The posted data can be accessed through the route parameter api using the route name. e.g `/api/characters/:character`.
 - Use Advance Rest Client(ARC) to test the api.
 
-## HTML (`view.html` added)
+# HTML
+### (`view.html` added)
 * Html added styled with Bootstrap
 * Jquery used to interact with the json object and to create the search logic.
 * New characters can be added through postman or my more prefered ARC services. add through `http://localhost:3000/api/characters`.
+* updated with links to add html
+### (`add.html` added)
+* Added to add new characters to the list and a view all button added which links back to the `view.html`.
