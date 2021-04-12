@@ -8,8 +8,8 @@
   },
   "main": "server1.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server1.js",
+    "watch": "nodemon server1.js"
   },
   "repository": {
     "type": "git",
