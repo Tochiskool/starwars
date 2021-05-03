@@ -28,5 +28,7 @@
 ## Github Pages
 * [Github Pages LInk](https://tochiskool.github.io/starwars/)
 ## Images of Page
-![Home page]()
-![Add Heroes]()
+**Home Page**
+![Home page](https://github.com/Tochiskool/starwars/blob/main/assets/images/heroes.jpg?raw=true)
+**Add Heroes**
+![Add Heroes](https://github.com/Tochiskool/starwars/blob/main/assets/images/homepage.jpg?raw=true)
