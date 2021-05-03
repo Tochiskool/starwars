@@ -24,4 +24,9 @@
 ### (`add.html` added)
 * Added to add new characters to the list and a view all button added which links back to the `view.html`.
 # Heroku
-- App hosted on Heroku [Starwars App]()
+- App hosted on Heroku [Starwars App](https://starwars-tochiskool.herokuapp.com/)
+## Github Pages
+* [Github Pages LInk](https://tochiskool.github.io/starwars/)
+## Images of Page
+![Home page]()
+![Add Heroes]()
